@@ -1,0 +1,28 @@
+baseURL = "http://cloudbsd.org/"
+languageCode = "en-us"
+title = "CloudBSD"
+theme = "hugo-theme-air"
+paginate = 5
+DisqusShortname = ""
+Copyright = "All rights reserved - 2018"
+canonifyurls = true
+
+[author]
+  name = "mlapointe"
+
+[params]
+  description = "Coming to a server near you. ( or far far away. )"
+  cover = "images/user.jpg"
+  author = "mlapointe"
+  authorlocation = ""
+  authorwebsite = "http://cloudbsd.org"
+  bio= "my bio"
+  logo = "img/logo.png"
+  banner = "img/banner.png"
+  googleAnalyticsUserID = ""
+  # Optional RSS-Link, if not provided it defaults to the standard index.xml
+  RSSLink = ""
+  githubName = ""
+  twitterName = ""
+  hideHUGOSupport = true
+
