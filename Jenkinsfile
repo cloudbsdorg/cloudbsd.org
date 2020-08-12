@@ -5,7 +5,7 @@ pipeline {
 	stages {
 		stage('Install Dependencies') {
 			steps {
-				sh 'pkg install -y gohugo'
+				sh 'sudo pkg install -y gohugo'
 			}
 		}
 		stage('Build') {
