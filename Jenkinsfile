@@ -5,12 +5,12 @@ pipeline {
 	stages {
 		stage('Install Dependencies') {
 			steps {
-				sh 'echo "Install Dependencies Here"'
+				sh 'pkg install -y gohugo'
 			}
 		}
 		stage('Build') {
 			steps {
-				 sh 'echo "Build Here"'	
+				 sh 'hugo'	
 			}
 		}
         stage('Unit Tests') {
@@ -25,3 +25,4 @@ pipeline {
 		}
     }
 }
+
