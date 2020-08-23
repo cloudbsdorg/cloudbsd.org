@@ -6,6 +6,8 @@ paginate = 5
 DisqusShortname = ""
 Copyright = "All rights reserved - 2018"
 canonifyurls = true
+metaDataFormat = "yaml"
+defaultContentLanguageInSubdir= true
 
 [author]
   name = "mlapointe"
@@ -28,52 +30,46 @@ canonifyurls = true
   showVisitedLinks = true
   disableBreadcrumb = false
   disableNextPrev = false
+  disableSearch = true
   baseURL = "/"
   languageCode = "en-US"
   defaultContentLanguage = "en"
 
-title = "Hugo Learn Documentation"
-theme = "hugo-theme-learn"
-themesdir = "../.."
-metaDataFormat = "yaml"
-defaultContentLanguageInSubdir= true
-
-
 [outputs]
-home = [ "HTML", "RSS", "JSON"]
+  home = [ "HTML", "RSS", "JSON"]
 
 [Languages]
-[Languages.en]
-title = "Documentation for Hugo Learn Theme"
-weight = 1
-languageName = "English"
+  [Languages.en]
+    title = "CloudBSD Project"
+    weight = 1
+    languageName = "English"
 
 [[Languages.en.menu.shortcuts]]
-name = "<i class='fab fa-fw fa-github'></i> GitHub repo"
-identifier = "ds"
-url = "https://github.com/cloudbsdorg"
-weight = 10
+  name = "<i class='fab fa-fw fa-github'></i> GitHub repo"
+  identifier = "github"
+  url = "https://github.com/cloudbsdorg"
+  weight = 10
 
 [[Languages.en.menu.shortcuts]]
-name = "<i class='fas fa-fw fa-camera'></i> Showcases"
-url = "showcase"
-weight = 11
+  name = "<i class='fas fa-fw fa-download'></i> Download CloudBSD"
+  url = "download"
+  weight = 11
 
 [[Languages.en.menu.shortcuts]]
-name = "<i class='fas fa-fw fa-bookmark'></i> CloudBSD Wiki"
-identifier = "wiki"
-url = "https://wiki.cloudbsd.org/"
-weight = 20
+  name = "<i class='fas fa-book'></i> CloudBSD Wiki"
+  identifier = "wiki"
+  url = "https://wiki.cloudbsd.org/"
+  weight = 20
 
-[[Languages.en.menu.shortcuts]]
-name = "<i class='fas fa-fw fa-bullhorn'></i> Credits"
-url = "/credits"
-weight = 30
+#[[Languages.en.menu.shortcuts]]
+#  name = "<i class='fas fa-fw fa-bullhorn'></i> Credits"
+#  url = "/credits"
+#  weight = 30
 
-[Languages.fr]
-title = "Documentation du thème Hugo Learn"
-weight = 2
-languageName = "Français"
+#[Languages.fr]
+#title = "Documentation du thème Hugo Learn"
+#weight = 2
+#languageName = "Français"
 
 #[[Languages.fr.menu.shortcuts]]
 #name = "<i class='fab fa-fw fa-github'></i> Repo GitHub"

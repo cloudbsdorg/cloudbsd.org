@@ -38,9 +38,13 @@
     font-weight: 500;
     src: url("../fonts/Work_Sans_500.eot?#iefix") format("embedded-opentype"), url("../fonts/Work_Sans_500.woff") format("woff"), url("../fonts/Work_Sans_500.woff2") format("woff2"), url("../fonts/Work_Sans_500.svg#WorkSans") format("svg"), url("../fonts/Work_Sans_500.ttf") format("truetype");
 }
+
 body {
     background: #fff;
     color: #777;
+    background-image: url("/images/screen.png");
+    background-repeat: no-repeat;
+    background-size:cover;
 }
 body #chapter h1 {
     font-size: 3.5rem;
@@ -102,10 +106,8 @@ textarea:focus, input[type="email"]:focus, input[type="number"]:focus, input[typ
     box-shadow: inset 0 1px 3px rgba(0,0,0,.06),0 0 5px rgba(0,169,218,.7)
 }
 #header-wrapper {
-    background: #2d47cb;
     color: #fff;
     text-align: center;
-    border-bottom: 4px solid #9c6fb6;
     padding: 1rem;
 }
 #header a {
@@ -121,8 +123,8 @@ textarea:focus, input[type="email"]:focus, input[type="number"]:focus, input[typ
 .searchbox {
     margin-top: 1rem;
     position: relative;
-    border: 1px solid #915eae;
-    background: #764890;
+    border: 1px solid #fdfcfd;
+    background: #807c7c;
     border-radius: 4px;
 }
 .searchbox label {
@@ -173,8 +175,6 @@ textarea:focus, input[type="email"]:focus, input[type="number"]:focus, input[typ
     }
 }
 #sidebar {
-    background-color: #322A38;
-    position: fixed;
     top: 0;
     width: 300px;
     bottom: 0;
@@ -373,7 +373,6 @@ textarea:focus, input[type="email"]:focus, input[type="number"]:focus, input[typ
     }
 }
 #body .nav {
-    position: fixed;
     top: 0;
     bottom: 0;
     width: 4rem;
